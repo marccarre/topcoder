@@ -9,11 +9,11 @@ topcoder - TopCoder algorithm contests
 
 
 - Run:
-	- `gradle idea` or `gradle eclipse` to configure your favourite IDE.
 	- `./topcoder` to start the applet with the Greed plugin.
+	- `gradle idea` or `gradle eclipse` to configure your favourite IDE.
 	- `gradle check` to compile and test.
-	- `python build.py` to compile and test continuously.
-	- `python build.py <gradle tasks>` to continuously run the specified tasks.
+	- `python build.py` to compile and test continuously using Gradle.
+	- `python build.py <gradle tasks>` to continuously run the specified Gradle tasks.
 
 
 - Upgrade:
