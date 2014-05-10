@@ -1,6 +1,17 @@
-# Java:
+## Java:
 *.class
 
-# Gradle:
+## Gradle:
 .gradle/
 build/
+
+## Eclipse:
+.classpath
+.project
+.settings/
+
+## IntelliJ:
+.idea/
+*.iml
+*.ipr
+*.iws
