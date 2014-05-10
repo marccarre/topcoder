@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  // Testing:
+  testCompile 'org.hamcrest:hamcrest-all:1.+'
+  testCompile('junit:junit:4.+') {
+    exclude group: 'org.hamcrest'
+  }
+  testCompile 'com.google.guava:guava-testlib:17.+'
+}
