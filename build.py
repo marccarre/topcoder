@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/local/bin/python
 #
 # Description: 
 #   Watch for file changes under ./src, and 
@@ -6,8 +6,8 @@
 #   Default command is 'gradle check'.
 #
 # Example:
-#   python build.py                         # Runs 'gradle check'
-#   python build.py clean compileJava test  # Runs 'gradle clean compileJava test'
+#   ./build.py                         # Runs 'gradle check'
+#   ./build.py clean compileJava test  # Runs 'gradle clean compileJava test'
 #
 # Dependencies:
 #   watchdog
