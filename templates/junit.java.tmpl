@@ -1,6 +1,8 @@
 package ${Contest.Name;string(lower,removespace)};
 
 import org.junit.*;
+import static org.hamcrest.Matchers.is;
+import static org.junit.Assert.assertThat;
 
 public class ${ClassName}Test {
 ${<if Method.ReturnType.RealNumber}
@@ -49,11 +51,7 @@ ${<end}
 		${Method.ReturnType} __result = new ${ClassName}().${Method.Name}(${foreach e.Input in , }${in.Param.Name}${end});
 
 ${<if !Method.ReturnType.RealNumber}
-${<if Method.ReturnType.Array}
-		Assert.assertArrayEquals(__expected, __result);
-${<else}
-		Assert.assertEquals(__expected, __result);
-${<end}
+		assertThat(__result, is(__expected));
 ${<else}
 ${<if Method.ReturnType.Array}
 		assertTcFloatArrayEquals(__expected, __result);
